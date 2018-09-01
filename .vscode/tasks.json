@@ -8,12 +8,16 @@
       "type": "shell",
       "command": "g++",
       "args": [
-        "-g", "./src/list/index.cpp"
+        "-g",
+        "./src/LinearTable/index.cpp"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
-      }
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
     }
   ]
 }
