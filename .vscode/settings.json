@@ -23,6 +23,9 @@
     "ratio": "cpp",
     "system_error": "cpp",
     "tuple": "cpp",
-    "__locale": "cpp"
+    "__locale": "cpp",
+    "iosfwd": "cpp",
+    "iostream": "cpp",
+    "ostream": "cpp"
   }
 }

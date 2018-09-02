@@ -1,9 +1,12 @@
 #include <iostream>
 
 #include "array.cpp"
+#include "../atest/test.cpp"
+
+using namespace std;
 
 void print(int value) {
-  std::cout<<value<<std::endl;
+  cout<<value<<endl;
 }
 
 int main(int argc, char const *argv[])
@@ -20,14 +23,19 @@ int main(int argc, char const *argv[])
   ListInsert(2, item3, L);
   ListInsert(3, item4, L);
 
-  PrintList(L);
+  int expect[] = { 2, 3, 4, 5};
 
-  ListDelete(1, L);
+  TEST_ARRAY("init L", GetValue(L), expect);
 
-  PrintList(L);
+  ListItem dItem = ListDelete(1, L);
+  TEST_INT("delete item", dItem->value, 3);
 
-  print(ListLocate(item4, L));
-  print(ListRetrieve(1, L)->value);
+  int expect2[] = { 2, 4, 5 };
+  TEST_ARRAY("after delete", GetValue(L), expect2);
+
+  TEST_INT("element local in link", ListLocate(item4, L), 2);
+
+  TEST_INT("get element in ", ListRetrieve(1, L)->value, 4);
 
   return 0;
 }

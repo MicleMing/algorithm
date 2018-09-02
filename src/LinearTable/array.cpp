@@ -73,3 +73,11 @@ void PrintList(List L) {
   }
   std::cout<<'\n'<<std::endl;
 }
+
+int *GetValue(List L) {
+  int *values = (int *)malloc(L->n * sizeof(int));
+  for(int i = 0; i < L->n; i++) {
+    values[i] = L->table[i]->value;
+  }
+  return values;
+}
