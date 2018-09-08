@@ -26,6 +26,11 @@
     "__locale": "cpp",
     "iosfwd": "cpp",
     "iostream": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "list": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "__tuple": "cpp",
+    "ios": "cpp"
   }
 }

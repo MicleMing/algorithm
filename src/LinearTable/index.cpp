@@ -25,13 +25,16 @@ int main(int argc, char const *argv[])
 
   int expect[] = { 2, 3, 4, 5};
 
-  TEST_ARRAY("init L", GetValue(L), expect);
+
+
+  TEST_ARRAY("init L", GetValue(L), L->n, expect, 4);
 
   ListItem dItem = ListDelete(1, L);
   TEST_INT("delete item", dItem->value, 3);
 
   int expect2[] = { 2, 4, 5 };
-  TEST_ARRAY("after delete", GetValue(L), expect2);
+  TEST_ARRAY("after delete", GetValue(L), L->n ,expect2, 3);
+
 
   TEST_INT("element local in link", ListLocate(item4, L), 2);
 
