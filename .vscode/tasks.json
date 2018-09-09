@@ -9,7 +9,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "./src/LinearTable/index.cpp"
+        "./src/LinearTable/pointer_index.cpp"
       ],
       "group": {
         "kind": "build",

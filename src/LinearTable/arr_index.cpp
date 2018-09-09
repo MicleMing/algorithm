@@ -11,6 +11,9 @@ void print(int value) {
 
 int main(int argc, char const *argv[])
 {
+
+  // =============ARRAY START====================
+
   List L = ListInit(5);
   ListItem item1 = newListItem(2);
   ListItem item2 = newListItem(3);

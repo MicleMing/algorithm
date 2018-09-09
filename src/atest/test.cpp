@@ -9,6 +9,10 @@ int TEST_INT(string describe, int input, int expect) {
     return 0;
   }
   cout<<"[FAILURE]:" + describe<<endl;
+  cout<<"[INPUT]:";
+  cout<<input<<endl;
+  cout<<"[EXPECT]:";
+  cout<<expect<<endl;
   return 1;
 }
 
